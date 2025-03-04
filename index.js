@@ -21,7 +21,7 @@ listContainer.addEventListener("click", function (e) {
         e.target.classList.toggle("checked");
         saveData();
     } else if (e.target.tagName === "SPAN") {
-        e.target.parentElement.style.remove();
+        e.target.parentElement.remove();
         saveData();
     }
 }, false);
@@ -35,13 +35,13 @@ function loadData() {
 }
 loadData();
 
-// Execute a function when the user presses a key on the keyboard
-inputBox.addEventListener("keypress", function(event) {
-  // If the user presses the "Enter" key on the keyboard
-  if (event.key === "Enter") {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-    document.getElementById("addBtn").click();
-  }
-});
+// // Execute a function when the user presses a key on the keyboard
+// inputBox.addEventListener("keypress", function(event) {
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     document.getElementById("addBtn").click();
+//   }
+// });
